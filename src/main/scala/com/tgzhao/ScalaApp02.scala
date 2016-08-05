@@ -11,6 +11,39 @@ import scala.io.Source
 object ScalaApp02 {
 
   def main(args: Array[String]) {
+
+    //匹配元组
+    val tuple=(1,2)
+    tuple match{
+      case (1,_)=>println("start 1")//匹配以1开头的元组
+      case (_,2)=>println("end2")//匹配以2结尾的元组
+
+      case _=>println("nothing")
+    }
+
+
+    val array2=Array("Mary","had","a","little","cat") //直接按内容进行初始化
+    println(array2.mkString("#"))//
+    println("the index is 2="+array2(3))//取索引为3的值
+    val array3:Array[(String,Int)]=Array(("xiaoming",23),("xiaohong",22))//使用元祖作为数组内容
+    array3.foreach(println)
+
+
+    //Scala Application
+    val str="Hello,wrold"
+    println(Array("dfdf", "fasdf"))
+    println(str.split(Array(',', ' ')))
+
+    val data=str
+              .split(Array(',',' '))
+              .flatMap(for(c<-_) yield (c,1))  //好Api
+              .groupBy(_._1)
+              .mapValues(_.size)
+
+    println(data)
+
+
+/*
     tupleDemo
     println
     mapDemo
@@ -19,6 +52,7 @@ object ScalaApp02 {
     println
     fileWriteAndRead
     println(getUrlContent("http://www.cnblogs.com/yjmyzz/"))
+*/
 
   }
 
