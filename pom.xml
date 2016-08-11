@@ -8,6 +8,23 @@
     <artifactId>java-scala</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!--依赖资源库-->
+    <repositories>
+        <repository>
+            <id>oschina Repository</id>
+            <name>oschina Repository</name>
+            <url>http://maven.oschina.net/content/groups/public/</url>
+        </repository>
+    </repositories>
+    <!--插件资源库-->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>oschina Plugin Repository</id>
+            <name>oschina Plugin Repository</name>
+            <url>http://maven.oschina.net/content/groups/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
     <dependencies>
         <dependency>
             <groupId>org.scala-lang</groupId>

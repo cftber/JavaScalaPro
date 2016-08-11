@@ -5,8 +5,9 @@ import scala.io.StdIn
 /**
  * Created by tgzhao on 2016/7/26.
  */
-class ScalaApp {
+object ScalaApp {
 
+  //和Java类似，Scala中任何Singleto对象，如果包含main方法，都可以作为应用的入口点
   def main(args: Array[String]) {
     println("please input something,press Enter to exit:") //每一行最后加不加分号都可以
     readKeyboard //注：无参数的函数调用，加不加括号都行
