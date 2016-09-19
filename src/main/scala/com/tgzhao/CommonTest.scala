@@ -1,10 +1,17 @@
 package com.tgzhao
 
+import scala.util.Random
+
 /**
  * Created by tgzhao on 2016/8/3.
  */
 object CommonTest {
   def main(args: Array[String]) {
+    val seqtest : Seq[String] = Seq("werwe", "aaa", "grgr", "bfer")
+    println(seqtest)
+    println(Random.shuffle(seqtest))
+    println(0.shortValue)
+    return ;
 
     val songTitles = List("The White Hare", "Childe the Hunter", "Take no Rogues")
     println(songTitles.map(t => t.toLowerCase))
